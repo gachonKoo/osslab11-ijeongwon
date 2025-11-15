@@ -1,10 +1,13 @@
-from geo.utils import add, subtract, multiply
+import geo.utils as utils
 
-def test():
-    assert add(1, 2) == 3
-    assert subtract(5, 3) == 2
-    assert multiply(2, 4) == 8
-    print("Success!")
+# pythagoras 테스트
+a, b = 3, 4
+# 빈칸 채우기 → pythagoras 함수 호출
+c = utils.pythagoras(a, b)
+print("c =", c)
 
-if __name__ == "__main__":
-    test()
+# circle 테스트
+r = 10
+# 빈칸 채우기 → circle 함수 호출
+area = utils.circle(r)
+print("area =", area)
